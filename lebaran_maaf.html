@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permintaan Maaf Lebaran</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            text-align: center;
+            background-color: #c2f0a2; /* Warna ketupat hijau muda */
+            padding: 50px;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7); /* Background semi-transparan untuk meningkatkan keterbacaan */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            background-image: url('https://i.imgur.com/NoeeVUx.png'); /* Gambar dari Imgur */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #ffffff; /* Warna font kontras */
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #pesan {
+            font-weight: bold;
+            font-size: 20px;
+            color: #ffffff; /* Warna putih agar lebih kontras */
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+            background: rgba(0, 0, 0, 0.6); /* Latar belakang pesan agar lebih terbaca */
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="https://drive.google.com/uc?export=download&id=1JhiaPzQ8mBQapa7TUFSu6Q1csc3dvCo-" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+    
+    <div class="container">
+        <h1>Selamat Hari Raya Idul Fitri</h1>
+        <p>Taqabbalallahu minna wa minkum</p>
+        <button onclick="tampilkanPesan()">Klik untuk Meminta Maaf</button>
+        <p id="pesan" style="display:none; margin-top:20px;"></p>
+    </div>
+    
+    <script>
+        function tampilkanPesan() {
+            document.getElementById("pesan").innerHTML = "Mohon maaf lahir dan batin, THR nya jangan lupa tf ke BNI ya!!👌😂😁😁😁";
+            document.getElementById("pesan").style.display = "block";
+        }
+    </script>
+</body>
+</html>
